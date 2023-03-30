@@ -1,0 +1,146 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15rem;
+    place-items: center;    
+}
+
+ul {
+    list-style: none;
+}
+
+li>a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav li ul {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 400ms linear 300ms;
+}
+
+li:hover > ul {
+    opacity: 1;
+}
+
+
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    border-radius: 50%;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+.circle:hover{
+    transform: translate3d(20px,20px,20px);
+}
+
+.parent {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: red;
+}
+
+.son {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.margin{
+    margin-top: 2rem;
+}
+
+.rotate {
+    background-color: black;
+    width: 300px;
+    height: 100px;
+    transition-property: transform;
+    transition-duration: 3s;
+    
+}
+
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+.scale {
+    background-color: black;
+    width: 300px;
+    height: 100px;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+.scale:hover{
+    transform: scale(2);
+}
+
+.skew {
+    background-color: black;
+    width: 300px;
+    height: 100px;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+.skew:hover{
+    transform: skew(45deg);
+    backface-visibility: visible; 
+}
+
+.matrix {
+    background-color: black;
+    width: 300px;
+    height: 100px;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+.matrix:hover{
+    transform: scale(2) skew(45deg) rotate(35deg);
+}
+
+
+.parent3d {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    perspective: 100px;
+}
+
+.son3d {
+    position: absolute;
+    transform-style:preserve-3d ;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+.son3d:hover{
+    transform: rotate3d(1,2,6,45deg);
+}
+
+span {
+    text-align: center;
+    color: black;
+    font-size: 2rem
+}
