@@ -1,0 +1,27 @@
+nav > ul{
+    
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+
+}
+
+.listas {
+    opacity: 0;
+    transition-delay:1000ms ;
+}
+
+.trigger:hover  .listas {
+    opacity: 1;
+    transform: translateY(20px);
+    transition: transform 1000ms ease 100ms;
+    
+    
+}
